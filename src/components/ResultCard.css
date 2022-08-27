@@ -1,0 +1,40 @@
+.movie-card-wrapper{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.movie-card-wrapper:hover{
+    background-color: rgb(241, 241, 241);
+}
+.movie-poster{
+    height: 100px;
+    width: auto;
+    border-radius: 10%;
+}
+
+.movie-title{
+    font-weight: bold;
+    margin-left: 10px ;
+}
+button{
+    background-color: aquamarine;
+    padding: 10px;
+    border-style: none;
+    border-radius: 10%;
+    margin: 10px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(114, 251, 205);
+}
+select{
+    background-color: aquamarine;
+    border: none 10%;
+    outline: none;
+}
+.filler-poster{
+    background-color: rgb(205, 205, 205);
+    height: 100px;
+    width: 70px;
+    border-radius: 10%;
+}
