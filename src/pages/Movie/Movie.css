@@ -22,5 +22,8 @@
     background-color: aliceblue;
 }
 .movie-top-right{
-    font-size: large;
+    font-size: large;   
+}
+a {
+    text-decoration: none;
 }

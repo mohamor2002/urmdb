@@ -11,7 +11,7 @@ function Movie(props) {
     const {movieId} = useParams()
     const {updateRating,rating}=useContext(GlobalContext)
     const [movie,setMovie]=useState({})
-    const movieRating=rating.find(r=>r.id==movieId)
+    const movieRating=rating.find(r=>r.movie.id==movieId)
     const rated=movieRating?true:false
     const [rat,setRat]=useState(rated?movieRating.score:0)
     useEffect(()=>{
@@ -39,9 +39,7 @@ function Movie(props) {
     }
     const handleSubmit=(e)=>{
         e.preventDefault()
-        updateRating({id:movie.id,score:rat})
-
-        console.log('submitted')
+        updateRating({movie:movie,score:rat})
     }
 
     return (

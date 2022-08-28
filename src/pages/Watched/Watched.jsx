@@ -13,20 +13,22 @@ function Watched(props) {
             {
                 watched.map((movie)=>{
                     return (
-                    <div>
+                    <Link to={`../${movie.id}`}>
+                        <div key={movie.id}>
 
-                        {movie.poster_path ? (
-                            <>
-                                <img className='movie-poster' src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`} alt="" />
-                            </>
-                            )
-                            :
-                            (
-                                <div className='filler-poster'></div>
-                            )
-                        }
-                        {movie.title}
-                    </div>
+                            {movie.poster_path ? (
+                                <>
+                                    <img className='movie-poster' src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`} alt="" />
+                                </>
+                                )
+                                :
+                                (
+                                    <div className='filler-poster'></div>
+                                )
+                            }
+                            {movie.title}
+                        </div>
+                    </Link>
                     )
                 })
             }

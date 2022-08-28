@@ -18,7 +18,7 @@ export default (state,action) =>{
         case "UPDATE_RATING":
             return{
                 ...state,
-                rating:[action.payload,...state.rating.filter(movie=>movie.id!=action.payload.id)]
+                rating:[action.payload,...state.rating.filter(movie=>movie.movie.id!=action.payload.id)]
             }    
         
         default:

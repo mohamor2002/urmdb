@@ -8,7 +8,6 @@ import { useEffect } from 'react';
 function Home(props) {
     const [movie,setMovie] = useState('')
     const {updateResult,result,rating}=useContext(GlobalContext)
-    console.log(rating)
     const handleOnChange= e =>{
         e.preventDefault()
         setMovie(e.target.value)
@@ -34,7 +33,7 @@ function Home(props) {
             </div>
             <button><Link to={'/watchlist'}>Watchlist</Link></button>
             <button><Link to={'/watched'}>Watched</Link></button>
-            <button><Link to={'/rated'}>Watched</Link></button>
+            <button><Link to={'/rated'}>Rated</Link></button>
                         { (result.length>0 && (
                 <ul>
                     {

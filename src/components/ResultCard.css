@@ -1,11 +1,17 @@
 .movie-card-wrapper{
     display: flex;
     align-items: center;
-    padding: 10px;
+    justify-content: center;
 }
-.movie-card-wrapper:hover{
+.movie-card{
+    display: flex;
+    padding: 30px;
+    border-radius: 20px;
+}
+.movie-card:hover{
     background-color: rgb(241, 241, 241);
 }
+
 .movie-poster{
     height: 100px;
     width: auto;
