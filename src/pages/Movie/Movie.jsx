@@ -40,6 +40,7 @@ function Movie(props) {
     const handleSubmit=(e)=>{
         e.preventDefault()
         updateRating({movie:movie,score:rat})
+        console.log(rating)
     }
 
     return (
